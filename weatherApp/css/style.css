@@ -1,0 +1,97 @@
+* { /*  tüm elementlerin marjlarını ve dolgularını sıfırlayabilir ve kutu modelini belirleyebiliriz*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    /* background-image: url("https://imajpgges3.alphacoders.com/109/."); */
+    background-size: cover;
+    background-position: top center;
+    background-image: url(/img/25501.jpg);
+}
+
+.app-wrap {
+    display: flex; /* Elementin esnek bir konteyner olarak davranmasını sağlar */
+    flex-direction: column; /* İçeriklerin dikey olarak sıralanmasını belirtir */
+    min-height: 100vh; /* Elementin minimum yüksekliğini tarayıcının görüntülenebilir alanının yüksekliği kadar ayarlar */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3), /* Gradientin başlangıç rengi (siyahın yarı saydam tonu) */
+        rgba(0, 0, 0, 0.6) /* Gradientin bitiş rengi (siyahın daha koyu yarı saydam tonu) */
+    ); /* Arka plana bir gradiyentli geçiş efekti uygular */
+}
+
+header {
+    display: flex; /* Elementin esnek bir konteyner olarak davranmasını sağlar */
+    justify-content: center; /* İçeriği yatay eksende ortalar */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    padding: 50px 15px 15px; /* Dış dolgu değerleri: üst: 50px, sağ ve sol: 15px, alt: 15px */
+}
+
+header input {
+    width: 100%; /* Genişlik değeri, ebeveynine (header) göre yüzde olarak ayarlanır */
+    max-width: 280px; /* Maksimum genişlik değeri 280 piksel olarak sınırlanır */
+    padding: 10px 15px; /* İç dolgu değerleri: üst ve alt: 10 piksel, sağ ve sol: 15 piksel */
+    border: none; /* Sınır (border) olmamasını belirtir */
+    outline: none; /* Odaklandığında çizgi çıkmamasını belirtir */
+    background-color: rgba(18, 18, 18, 0.4); /* Arkaplan rengi: rgba(18, 18, 18, 0.4) */
+    border-radius: 16px; /* Kenar yuvarlama değeri: 16 piksel */
+    border-bottom: 3px solid #df8e00; /* Alt kenarlık (border) değeri: 3 piksel kalınlığında, #df8e00 renginde */
+
+    font-size: 20px; /* Yazı tipi boyutu: 20 piksel */
+    font-weight: 300; /* Yazı tipi kalınlığı: 300 (normal) */
+    transition: 0.2s ease-out; /* Geçiş efekti: 0.2 saniyede yumuşak bir şekilde gerçekleşir */
+    color: #202020; /* Yazı rengi: #eeeeee (açık gri) */
+}
+header input:focus { /* Kullanıcı odaklandığında (tıkladığında veya seçildiğinde), arkaplan rengi değiştirilir */
+    background-color:#ffffff;
+}
+
+main {
+    flex: 1 1 100%; /* Esneklik özellikleri: büyüme (flex-grow): 1, küçülme (flex-shrink): 1, başlangıç genişliği: 100% */
+    padding: 25px 25px 50px; /* İç dolgu değerleri: üst: 25px, sağ ve sol: 25px, alt: 50px */
+    display: flex; /* Elementin esnek bir konteyner olarak davranmasını sağlar */
+    flex-direction: column; /* İçeriklerin dikey olarak sıralanmasını belirtir */
+    align-items: center; /* İçeriği dikey eksende ortalar */
+    text-align: center; /* İçeriği yatay eksende ortalar */
+}
+
+.location .city {
+    color: #eeeeee; /* Yazı rengi: #eeeeee (açık gri) */
+    font-size: 32px; /* Yazı tipi boyutu: 32 piksel */
+    font-weight: 500; /* Yazı tipi kalınlığı: 500 (medium) */
+    margin-bottom: 5px; /* Alt boşluk (margin): 5 piksel */
+}
+
+.location .date {
+    color: #eeeeee; /* yazı rengi açık gri*/
+    font-size: 16px; /* yazı boyutu*/
+}
+
+.current .temp {
+    color: #eeeeee; /*yazı rengi*/
+    font-size: 102px; /* yazı boyutu*/
+    font-weight: 900; /*yazı tipi kalınlığı*/
+    margin: 30px 0; /* Dış boşluk değerleri: üst ve alt: 30 piksel, sağ ve sol: 0 */
+    text-shadow: 2px 8px rgba(0, 0, 0, 0.5); /* Metin gölgesi: yatay ofset: 2 piksel, dikey ofset: 8 piksel */
+}
+
+.current .temp span {
+    font-weight: 200px; 
+}
+.current .weather {
+    color: #eeeeee;
+    font-size: 32px;
+    font-weight: 700px;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
+.current .hi-low {
+    color: #eeeeee;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
