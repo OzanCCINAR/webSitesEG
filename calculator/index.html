@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div>
+        <h1>calculator</h1>
+        <hr>
+        <label for="number-1">ilk numara</label><br>
+        <input type="number" id="n1"><br>
+        <label for="number-2">ikinci numara</label><br>
+        <input type="number" id="n2"><br>
+        <label for="result">işlem seçiniz</label>
+        <select name="calculator" id="select">
+            <option value="cıkarma">cıkarma</option>
+            <option value="toplama">toplama</option>
+            <option value="bolme">bolme</option>
+            <option value="carpma">carpma</option>
+        </select><br>
+        <input type="number" name="result" id="result">
+        <button onclick="calculate()">Hesapla</button>
+
+    </div>
+
+
+    <script src="js/calculator.js"></script>
+</body>
+</html>
