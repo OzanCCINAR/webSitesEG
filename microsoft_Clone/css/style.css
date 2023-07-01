@@ -1,0 +1,92 @@
+.searchbar{
+    
+    width: 150px !important;
+    border-radius: 25px !important;
+}
+.navfont {
+    font-size: 13px;
+}
+.logosize{
+    width: 103px;
+}
+.dropdown a.btn.dropdown-toggle {
+    font-size: 12px; /* Tüm microsoft yazan yer için */
+}
+
+.dropdown-menu {
+    transform: scale(0.7); /* Daha küçük bir değer deneyebilirsiniz */
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent; /* hoverı kaldırdım*/
+    text-decoration: underline; /* alt çizgi ekledim*/
+  }
+ul {
+    list-style: none;
+  }
+.carousel-info{
+    position: absolute;
+    top: 150px;
+    font-size: 17px;
+}
+.btn-features{
+    border-radius: 2px;
+    border: none;
+    padding: 6px;
+    background-color: #0067b8;
+}
+.btn-features:hover{
+    background-color: #015da4;
+}
+.a-text{
+    text-decoration: none;   
+    color:  #015da4;
+}
+.a-text:hover{
+    text-decoration: underline;
+}
+.chevron-icon {
+    transition: margin-left 0.3s ease-out; /* Geçiş süresi ve geçiş eğrisi belirtimi */
+    
+}
+  
+.chevron-right:hover .chevron-icon {
+    margin-left: 8px; /* İkonun sağa doğru 10 piksel kaydırılması */
+}
+.li-color{
+    color: #0067b8;
+}
+
+.social-icons {
+    font-size: 21px; /* Boyutu istediğiniz değere ayarlayabilirsiniz */
+    color: black; /* Rengi siyah olarak ayarlar */
+  }
+  
+.social-icons:hover{
+    color: black;
+}
+.btn {
+    background-color: #FF0000; /* Buton arka plan rengi */
+    color: #FFFFFF; /* Buton metin rengi */
+  }
+  .btn-scroll{
+    border-radius: 2px;
+    border: none;
+    padding: 6px;
+    background-color: #cbcbcb;
+}
+.btn-scroll:hover{
+    background-color: #f6f9fa;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+.fotterfont{
+    font-size: 11px;
+    text-decoration: none;
+    
+}
+.fotterfont:hover{
+    text-decoration: underline;
+}
+.fotter-h{
+    font-size: 15px;
+    color: rgb(98, 97, 97);
+}
